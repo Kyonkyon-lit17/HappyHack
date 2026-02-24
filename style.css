@@ -4,6 +4,22 @@
     padding:0;
 }
 
+@font-face {
+  font-family: "FuturaCustom";
+  src: url("fonts/Futura-Boo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaBook";
+  src: url("fonts/Futura-Bol.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaBookOblique";
+  src: url("fonts/Futura-BooObl.ttf") format("truetype");
+}
+
+
 .firstv{
     width:100vw;
     height:100vh;
@@ -36,8 +52,8 @@ nav li{
 nav a{
     color:#fff;
     font-size: 20px;
-    font-weight: light;
-    font-family: "Inter";
+    font-weight: 0.2;
+    font-family: "FuturaBook";
     text-decoration:none;
     letter-spacing: normal;
     transition: all 0.3s ease , color 0.3s ease;
@@ -70,10 +86,10 @@ nav a:hover{
 
 .firstv_title p{
     color:#fff;
-    font-size: 40px;
-    font-style: italic;
+    font-size: 45px;
     font-weight: 500;
-    font-family: "Montserrat";
+    font-style: italic;
+    font-family: "FuturaBookOblique";
     margin-top: 30px;
 }
 
@@ -92,16 +108,16 @@ nav a:hover{
 
 .title{
    color:#3D5CDB;
-   font-size: 50px;
+   font-size: 60px;
    font-weight: 1000;
    letter-spacing: normal;
-   font-family: "Inter";
+   font-family: "FuturaBook";
    text-align: center;
    margin-top:40px;
    margin-bottom: 40px;
 }
 
-.box{
+.box1, .box2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,9 +141,9 @@ nav a:hover{
 
 .introduction_text{
     color:#4d4d4d;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
-    letter-spacing: 0.1em;
+    font-family: "Noto Sans Japanese";
 }
 
 .txtbox a{
@@ -153,6 +169,24 @@ nav a:hover{
 
 .introduction_button2{
     background-color: orange;
+}
+
+@media(max-width: 1000px){
+    .box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    }
+    .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+    }
+
 }
 
 .courses{
@@ -184,12 +218,7 @@ nav a:hover{
     border-radius: 8px;
 }
 
-@media(max-width:768px){
-.courses_items{
-  width:160px;
-  height:200px;
-}
-}
+
 
 .courses_items img{
     width:100px;
@@ -197,7 +226,7 @@ nav a:hover{
     margin: 30px 20px;
 }
 .courses_items h3{
-    color:rgb(16, 16, 57);
+    color:rgb(38, 38, 66);
     font-size:16px;
     font-weight:bold;
     margin: 15px 0;
@@ -224,30 +253,57 @@ box-shadow: 0 0 20px rgba(0,0,0,0.25)
 .courses_button1{
 background-color:#F16529
 }
+
 .courses_button2{
-background-color:#333333
-}
-.courses_button3{
-background-color:#FF5252
-}
-.courses_button4{
-background-color:#FED700
-}
-.courses_button5{
-background-color:#FE7536
-}
-.courses_button6{
-background-color:#73CEDD
-}
-.courses_button7{
-background-color:#F16529
+background-color:#29A9DF
 }
 
+.courses_button3{
+background-color:#333333
+}
+.courses_button4{
+background-color:#FF5252
+}
+.courses_button5{
+background-color:#FED700
+}
+.courses_button6{
+background-color:#FE7536
+}
+.courses_button7{
+background-color:#73CEDD
+}
+
+
 @media(max-width:768px){
-    .courses_items{
-        width:160px;
-        height:200px;
-    }
+
+.courses_items{
+    width:160px;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.courses_items img{
+  width:70px;
+  height:70px;
+   margin: 15px 10px;
+}
+
+.courses_items h3{
+    margin: 10px 0;
+}
+.courses_items a{
+  width:140px;
+  height:32px;
+  font-size:12px;
+  line-height: 30px;
+
+}
 }
 
 .images{
@@ -293,5 +349,7 @@ footer{
     align-items:center;
     justify-content:center;
     font-size: 15px;
+    font-family:"FuturaBook";
+    font-weight: lighter;
     color:#3D5CDB;
 }

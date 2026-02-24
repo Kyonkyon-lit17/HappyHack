@@ -4,23 +4,26 @@ $(function($){
         interval:5000,
         loop:true,
     });
-        var slideCount;
-        var windowWidth=$(window).width();
-
-        if(windowWidth<=768){
-            slideCount=2;
-        }else if (windowWidth<=1200){
-            slideCount = 3;
-        }else{
-            slideCount=4;
-        }
-
 $('.slidebox').slick({
-    slidesToShow:slideCount,
-    slidesToScroll:1,
-    arrows:true,
-    autoplay:true,
-    autoplaySpeed:3000,
-    dots:true
-     })
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  dots:true,
+  autoplaySpeed: 3000,
+
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+})
 })
