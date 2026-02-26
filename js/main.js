@@ -3,6 +3,8 @@ $(function($){
         images:['images/background1.jpg', 'images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg'],
         interval:5000,
         loop:true,
+        speed: 1000,       
+        fade: true, 
     });
 $('.slidebox').slick({
   slidesToShow: 4,
@@ -43,3 +45,18 @@ particlesJS("particles-js", {
   }
 });
 })
+
+$(function(){
+
+  $('nav a').on('click', function(e){
+    e.preventDefault();
+
+    const target = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 1000, 'swing');   // ← ここがふわっとの正体
+
+  });
+
+});

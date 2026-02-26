@@ -52,7 +52,7 @@ nav li{
 nav a{
     color:#fff;
     font-size: 20px;
-    font-weight: 0.2;
+    font-weight: 500;
     font-family: "FuturaBook";
     text-decoration:none;
     letter-spacing: normal;
@@ -356,6 +356,28 @@ background-color:#73CEDD
     justify-content: center;
     align-items: center;
     padding: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+
+  opacity: 1;
+  color: black;
+}
+
+.slick-prev:before {
+  content: "←";
+}
+
+.slick-next:before {
+  content: "→";
+}
+
+.slick-prev:before {
+  content: "←";
 }
 
 .slidebox{
