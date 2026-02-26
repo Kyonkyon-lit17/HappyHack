@@ -139,7 +139,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     row-gap: 30px;
-    max-width: 400px;
+    width: 400px;
     line-height: 2;
 }
 
@@ -213,6 +213,13 @@ nav a:hover{
     row-gap: 30px;
     max-width: 600px;
     line-height: 2;
+}
+.introduction_text{
+    color:#4d4d4d;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Noto Sans Japanese";
+
 }
 .introduction_pic{
     width:100%;
