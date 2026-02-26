@@ -104,6 +104,13 @@ nav a:hover{
 
 #introduction{
     padding:30px;
+    margin: 0 auto;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+
 }
 
 .title{
@@ -115,13 +122,15 @@ nav a:hover{
    text-align: center;
    margin-top:40px;
    margin-bottom: 40px;
+    
 }
 
 .box1, .box2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 100px;
+    max-width:1000px;
+    column-gap: 50px;
 }
 
 .txtbox{
@@ -132,11 +141,10 @@ nav a:hover{
     row-gap: 30px;
     width: 400px;
     line-height: 2;
-    margin:0 50px;
 }
 
 .introduction_pic{
-    width:500px;
+    max-width:500px;
 }
 
 .introduction_text{
@@ -144,6 +152,7 @@ nav a:hover{
     font-size: 16px;
     font-weight: normal;
     font-family: "Noto Sans Japanese";
+
 }
 
 .txtbox a{
@@ -172,6 +181,16 @@ nav a:hover{
 }
 
 @media(max-width: 1000px){
+    #introduction{
+    padding:30px;
+    margin: 0 auto;
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+
+}
     .box1{
     display: flex;
     justify-content: center;
@@ -186,14 +205,49 @@ nav a:hover{
     flex-direction: column-reverse;
     row-gap: 10px;
     }
+    .txtbox{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    max-width: 600px;
+    line-height: 2;
+}
+.introduction_pic{
+    width:100%;
+}
 
 }
+
+
 
 .courses{
     background-color:#d6e6f9;
     background-position: center center;
     background-size: cover;
     padding:30px;
+}
+
+
+#courses{
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#courses .title,
+#courses .courses_contents{
+  position: relative;
+  z-index: 1;
 }
 
 .courses_contents{
@@ -221,8 +275,7 @@ nav a:hover{
 
 
 .courses_items img{
-    width:100px;
-    height:100px;
+    max-height:100px;
     margin: 30px 20px;
 }
 .courses_items h3{
@@ -289,9 +342,8 @@ background-color:#73CEDD
 }
 
 .courses_items img{
-  width:70px;
-  height:70px;
-   margin: 15px 10px;
+    max-height:70px;
+    margin: 15px 10px;
 }
 
 .courses_items h3{
@@ -337,8 +389,11 @@ background-color:#73CEDD
 }
 
 @media(max-width:768px){
+#access{
+    padding: 0;
+}
 #access iframe{
-  width:100%
+  width:100%;
 }
 }
 

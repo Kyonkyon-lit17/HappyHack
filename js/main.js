@@ -23,7 +23,23 @@ $('.slidebox').slick({
       settings: {
         slidesToShow: 2
       }
+    },
+    {
+      breakpoint: 400,
+      settings:{
+        slidesToShow: 1
+      }
     }
+
   ]
 })
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 3 },
+    color: { value: "#fcfcfc" },
+    line_linked: { enable: true },
+    speed:6
+  }
+});
 })
